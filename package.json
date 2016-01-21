@@ -2,7 +2,8 @@
   "name": "gitmeter",
   "private": true,
   "scripts": {
-    "test": "grunt test"
+    "start": "node app.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",

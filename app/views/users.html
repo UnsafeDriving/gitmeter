@@ -1,0 +1,13 @@
+<div ng-init="listOfUsers()" ng-controller="SearchCtrl" >
+  <div class="col-xs-6 col-sm-4 col-md-2 search-result" ng-click="chargeUser(user.login)" ng-repeat="user in users | orderBy:predicate:login">
+    <div class="search-result-content">
+      <div class="search-result-avatar">
+        <img src="{{user.avatar_url}}" />
+      </div>
+      <hr />
+      <div class="search-result-username">
+        {{user.login}}
+      </div>
+    </div>
+  </div>
+</div>

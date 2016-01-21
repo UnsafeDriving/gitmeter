@@ -1,0 +1,83 @@
+<div class="row col-md-12" ng-init="loadRepositoryFromGit()" ng-controller="GitRepositoryCtrl">
+  <div class="row repository-info">
+    <h1><i class="glyphicon glyphicon-book"></i> {{repository.name}}</h1>
+  </div>
+  <div class="row" style="margin-left:15px;">
+    <div class="col-lg-3">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-6">
+              <i class="fa fa-exclamation-circle fa-5x"></i>
+            </div>
+            <div class="col-xs-6 text-right">
+              <p class="announcement-heading">{{repository.open_issues_count}}</p>
+              <p class="announcement-text">Open issues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-6">
+              <i class="fa fa-star fa-5x"></i>
+            </div>
+            <div class="col-xs-6 text-sucess">
+              <p class="announcement-heading">{{repository.stargazers_count}}</p>
+              <p class="announcement-text">Stars</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-6">
+              <i class="fa fa-eye fa-5x"></i>
+            </div>
+            <div class="col-xs-6 text-right">
+              <p class="announcement-heading">{{repository.watchers_count}}</p>
+              <p class="announcement-text">Watchers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-6">
+              <i class="fa fa-code-fork fa-5x"></i>
+            </div>
+            <div class="col-xs-6 text-right">
+              <p class="announcement-heading">{{repository.forks_count}}</p>
+              <p class="announcement-text">Forks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div
+    </div>
+  </div>
+  <div class="col-lg-4" style="text-align:center;">
+    <h1>Commits</h1>
+    <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels">
+    </canvas>
+  </div>
+  <div class="col-lg-4" style="text-align:center;">
+    <h1>Additions</h1>
+    <canvas id="bar" class="chart chart-bar" chart-data="dataA" chart-labels="labelsAD" chart-series="seriesA" chart-colours="Green">
+    </canvas>
+  </div>
+  <div class="col-lg-4" style="text-align:center;">
+    <h1>Deletions</h1>
+    <canvas id="bar" class="chart chart-bar" chart-data="dataD" chart-labels="labelsAD" chart-series="seriesD" chart-colours="Red">
+    </canvas>
+  </div>
+</div>

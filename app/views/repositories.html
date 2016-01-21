@@ -1,0 +1,13 @@
+<div ng-init="listOfRepositories()" ng-controller="SearchCtrl" >
+  <div class="col-xs-6 col-sm-4 col-md-2 search-result" ng-click="chargeRepository(repository.owner.login, repository.name)" ng-repeat="repository in repositories | orderBy:predicate:login">
+    <div class="search-result-content">
+      <div class="search-result-avatar">
+        <img src="{{repository.owner.avatar_url}}" />
+      </div>
+      <hr />
+      <div class="search-result-username">
+        {{repository.full_name}}
+      </div>
+    </div>
+  </div>
+</div>

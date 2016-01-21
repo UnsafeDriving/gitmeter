@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  background-color: #fafafa;
+  text-align: justify;
+}
+
+.container {
+  padding: 15px 0px;
+}
+
+.user-info {
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  padding: 10px;
+}
+
+.repository-info {
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  padding: 0px 10px 10px 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.search-result-content {
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.search-result-content:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+.search-result-username {
+  text-align: center;
+}
+
+hr {
+  padding: 0px !important;
+  margin: 6px 7px !important;
+}
+
+.search-result-avatar img {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.search-result-avatar {
+  text-align: center;
+}
+
+.navbar-inverse {
+  border-radius: 0px !important;
+}
+
+/*
+Form search
+*/
+.dropdown.dropdown-lg .dropdown-menu {
+  margin-top: -1px;
+  padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+  display: flex !important;
+}
+.btn-group .btn {
+  border-radius: 0;
+  margin-left: -1px;
+}
+.btn-group .btn:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-group .form-control:last-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+#adv-search input, #adv-search button,
+#adv-search .dropdown-menu,
+#adv-search .form-control {
+  border-radius: 0px !important;
+}
+
+th {
+  background-color: #ddd !important;
+  cursor: default;
+}
+
+table {
+
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+  box-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+
+/*
+ Stats
+ */
+
+.profile-container .profile-header .profile-stats .inlinestats-col:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+.profile-container .profile-header .profile-stats .inlinestats-col {
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans','trebuchet MS',Arial,Helvetica;
+    border-top: 1px solid #eee;
+    min-height: 55px;
+}
+.profile-container .profile-header .profile-stats .stats-col .stats-value {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans','trebuchet MS',Arial,Helvetica;
+}
+.pink {
+    color: #e75b8d!important;
+}
+.profile-container .profile-header .profile-stats .stats-col:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+.profile-container .profile-header .profile-stats .stats-col {
+    margin: 30px 0;
+    text-align: center;
+}
+.profile-container .profile-header .profile-stats {
+    min-height: 175px;
+    border-right: 1px solid #eee;
+}
+.profile-container .profile-header .profile-info .header-information {
+    line-height: 23px;
+    margin-top: 15px;
+    text-align: justify;
+}
+.profile-container .profile-header .profile-info .btn-follow {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+}
+.btn-palegreen, .btn-palegreen:focus {
+    background-color: #a0d468!important;
+    border-color: #a0d468;
+    color: #fff;
+}
+.profile-container .profile-header .profile-info .header-fullname {
+    font: 21px 'Lucida Sans','trebuchet MS',Arial,Helvetica;
+    margin-top: 27px;
+    display: inline-block;
+}
+.profile-container .profile-header .profile-info {
+    min-height: 175px;
+    border-right: 1px solid #eee;
+    padding: 15px 40px 35px 0;
+}
+.profile-container .profile-header .header-avatar {
+    width: 125px;
+    height: 125px;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    border: 5px solid #f5f5f5;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    margin: 25px auto;
+}
+.profile-container .profile-header {
+    min-height: 175px;
+    margin: 15px 15px 0;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.35);
+    box-shadow: 0 1px 2px rgba(0,0,0,.35);
+    background-color: #fbfbfb;
+}

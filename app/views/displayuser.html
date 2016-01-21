@@ -1,0 +1,52 @@
+<div class="col-md-12" ng-init="loadUserFromGit()" ng-controller="GitUserCtrl">
+
+  <div class="profile-container">
+    <div class="profile-header row">
+      <div class="col-md-4 col-sm-12 text-center">
+        <img src="{{user.avatar_url}}" alt="" class="header-avatar">
+      </div>
+      <div class="col-md-8 col-sm-12 profile-info">
+        <div class="header-fullname">{{user.name}}</div>
+        <p>{{user.login}}</p>
+        <div class="header-information">
+          {{user.bio}}
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 profile-stats">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12 stats-col">
+            <div class="stats-value pink">{{user.following}}</div>
+            <div class="stats-title">FOLLOWING</div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 stats-col">
+            <div class="stats-value pink">{{user.followers}}</div>
+            <div class="stats-title">FOLLOWERS</div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 stats-col">
+            <div class="stats-value pink">{{user.public_repos}}</div>
+            <div class="stats-title">Repositories</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+            <i class="glyphicon glyphicon-time"></i> Joined on {{user.created_at | date : 'longDate' }}
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+            <i class="glyphicon glyphicon-briefcase"></i> Company : {{user.company}}
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+            <i class="glyphicon glyphicon-map-marker"></i> Location : {{user.location}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12" style="margin-top:10px">
+    <table class="table table-hover table-bordered" style="background-color:white">
+      <th><i class="glyphicon glyphicon-book"></i> Repositories</th>
+      <tr style="cursor:pointer;" ng-click="chargeRepository(user.login, repo.name)" ng-repeat="repo in repositoriesOfAnUser">
+        <td>{{repo.full_name}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

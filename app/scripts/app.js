@@ -22,7 +22,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   })
   .state('repositoryDetails', {
     url: "/repository?name&username",
-    templateUrl: "views/displayrepository.html",
+    templateUrl: "views/displayRepository.html",
     controller: function($scope, $stateParams, $state) {
       $scope.name = $stateParams.name;
       $scope.username = $stateParams.username;

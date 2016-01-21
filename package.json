@@ -1,6 +1,9 @@
 {
   "name": "gitmeter",
   "private": true,
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
@@ -35,7 +38,8 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "scripts": {
-    "start": "node serve"
+  "dependencies": {
+    "bower": "^1.7.2",
+    "express": "^4.13.3"
   }
 }

@@ -84,6 +84,7 @@ angular.module('gitmeterApp')
       }
       $scope.dataA.push(tmpDataA);
       $scope.dataD.push(tmpDataD);
+	  $scope.$apply();
     });
   };
 }]);

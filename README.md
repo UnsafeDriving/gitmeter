@@ -1,12 +1,25 @@
 # gitmeter
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+## Description
 
-## Build & development
+J'ai choisi de développer une application AngularJS pour afficher du contenu obtenu via l'API GitHub pour ce projet, sujet numéro 2.
 
-Run `grunt` for building and `grunt serve` for preview.
+## Déploiement
 
-## Testing
+Exécuter `npm install` et `bower install`pour installer les dépendances.
+Exécuter `grunt serve` pour prévisualiser.
 
-Running `grunt test` will run the unit tests with karma.
+## Heroku
+
+Vous trouverez une démo de [gitmeter](https://secure-taiga-70681.herokuapp.com) sur heroku.
+
+## API GitHub
+
+## Fonctionnalités de l'application 
+### Utilisateurs
+#### Recherche d'un utilisateur
+#### Détails d'un utilisateur
+### Dépôt
+#### Recherche d'un dépôt
+#### Détails d'un dépôt
+##### Statistiques

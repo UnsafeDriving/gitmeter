@@ -1,8 +1,20 @@
 # gitmeter
+## Table des matières
+[TOC]
 
 ## Description
 
 J'ai choisi de développer une application AngularJS pour afficher du contenu obtenu via l'API GitHub pour ce projet, sujet numéro 2.
+
+## Objectifs
+Lors de la création de cette application mes objectifs étaient les suivants :
+
+ - Interface ergonomique
+ - Interface responsive
+ - Recherche d'utilisateurs et dépôts
+ - Affichage des détails d'un utilisateur
+ - Affichage de détails d'un dépôt
+ - Statistiques d'un dépôt
 
 ## Déploiement
 
